@@ -13,7 +13,7 @@ app.set('view engine', 'html');
 var env = process.env.ENV || 'local';
 
 // set our port
-var port = process.env.PORT || 8080; 
+var port = process.env.PORT || 80; 
 
 app.use(express.static(__dirname + '/public'));
 
