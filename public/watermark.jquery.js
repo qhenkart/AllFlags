@@ -43,11 +43,14 @@
 		},
 		// function for applying transparency to the watermark
 		applyTransparency = function(){
-			var w = watermark[0].width || watermark[0].offsetWidth,
-			h = watermark[0].height || watermark[0].offsetHeight;
+			var w = $('.watermark').width();
+			var h = $('.watermark').height();
+
+			// var w = watermark[0].width || watermark[0].offsetWidth,
+			// h = watermark[0].height || watermark[0].offsetHeight;
 			
 			setCanvasSize(w, h);
-			gctx.drawImage(watermark[0], 0, 0);
+			gctx.drawImage(watermark[0], 0, 0, w, h);
 					
 			var image = gctx.getImageData(0, 0, w, h);
 			var imageData = image.data,
@@ -91,7 +94,7 @@
 			gcanvas[0].height = h;
 		},
 		applyWatermark = function(img){
-
+			
 			setCanvasSize(img[0].width || img[0].offsetWidth, img[0].height || img[0].offsetHeight);
 			gctx.drawImage(img[0], 0, 0);
 
@@ -101,17 +104,16 @@
 			if(position.indexOf("top")!=-1)
 				y = 10;
 			else
-				y = gcanvas.height()-watermark.height()-10;
+				y = gcanvas.height()-watermark.height();
 			
 			if(position.indexOf("left")!=-1)
 				x = 10;
 			else
-				x = gcanvas.width()-watermark.width()-10;
+				x = gcanvas.width()-watermark.width();
 
 
 			gctx.drawImage(watermark[0], x, y);
 			img[0].onload = null;
-	
 			img.attr("src", gcanvas[0].toDataURL());
 		},
 		applyWatermarks = function(){

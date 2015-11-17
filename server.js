@@ -18,10 +18,10 @@ var port = process.env.PORT || 8080;
 app.use(express.static(__dirname + '/public'));
 
 // get initial route
- app.get('*', function(req, res) {
-    // load our public/index.html file
-    res.sendfile('./public/index.html'); 
-  });
+ // app.get('*', function(req, res) {
+ //    // load our public/index.html file
+ //    res.sendFile('index.html', { root: __dirname }); 
+ //  });
 
 // start app =============================================
 app.listen(port, function() {
