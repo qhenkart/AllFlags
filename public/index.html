@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pantasy</title>
     <meta name="description" content="">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro' rel='stylesheet' type='text/css'> -->
     <link rel="stylesheet" href="./stylesheets/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
@@ -15,10 +15,33 @@
   </head>
   <body>
 
-    <form id="form1" runat="server">
-        <input type='file' id="imgInp" />
-        <img id="blah" src="#" alt="your image" />
-    </form>
+    <div class="jumbotron center">
+    <div class="container">
+      <div class="row">
+          <h5 class="text-center">Welcome to All Flags, this is a very simple app tht will add an overlay to your facebook profile photo</h5>
+        <div class="col-xs-6 col-xs-offset-5">
+
+          <form id="form1" runat="server">
+            <div class="form-group">
+               <label for="imgInp">Upload Photo</label>
+               <input type="file" id="imgInp">
+            </div>
+          </form>            
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+
+          <img id="blah" src="#" alt="Image not loaded" />
+        </div>
+      </div>
+    </div>
+
+      <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Upload Photo</a></p> -->
+    </div>
+
+   
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="./watermark.jquery.js"></script>
     <script src="./app.js"></script>

@@ -11,7 +11,9 @@ function readURL(input) {
 }
 
 $(function() {
+    $('#blah').toggle();
     $('#imgInp').change(function(){
+        $('#blah').toggle();
         readURL(this);
         $('#blah').addClass('watermark')
         $(document).watermark()

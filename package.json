@@ -1,0 +1,25 @@
+{
+  "name": "allflags",
+  "version": "1.0.0",
+  "description": "A way for us to share our support for the world",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qhenkart/AllFlags.git"
+  },
+  "author": "Quest Henkart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qhenkart/AllFlags/issues"
+  },
+  "homepage": "https://github.com/qhenkart/AllFlags#readme"
+}
