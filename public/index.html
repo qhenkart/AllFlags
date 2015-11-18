@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html ng-app="allflags">
   <head>
@@ -15,42 +14,42 @@
   </head>
   <body>
 
-    <div class="container">
-      <div class="row">
-	<div class="col-sm-6 col-sm-offset-2">
-	  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	  <!-- Allflags -->
-	  <ins class="adsbygoogle"
-               style="display:inline-block;width:728px;height:90px"
-               data-ad-client="ca-pu b-7973447442489996"
-               data-ad-slot="9192247069"></ins>
-	  <script>
-	    (adsbygoogle = window.adsbygoogle || []).push({});
-	  </script>
-	</div>
-      </div>
-    </div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Allflags -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:728px;height:90px"
+         data-ad-client="ca-pu b-7973447442489996"
+         data-ad-slot="9192247069"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 
     <div class="jumbotron center">
       <div class="container">
-	<div class="row">
-          <h3 class="text-center">Welcome to All Flags, this is a very simple app that will add an overlay of a French, Lebanese, and Syrian flag onto your facebook profile photo</h3>
-          <div class="col-sm-6 col-sm-offset-3">
+        <h3>Welcome to <div class="red">A</div><div class="navy">l</div><div class="red">l</div><div class="navy">F</div><div class="red">l</div><div class="navy">a</div><div class="red">g</div><div class="navy">s</div></h3>
 
+	This is a very simple app that will add an overlay of a French, Lebanese, and Syrian flag onto your facebook profile photo
+
+	<div class="row">
+          <div class="profile_pic">
             <strong>Before:</strong>
             <img src="./before.png"/>
+	  </div>
+          <div class="profile_pic">
             <strong>After:</strong>
             <img src="./after.png"/>
           </div>
 	</div>
-        <p class="text-center"><strong>Step 1:</strong> Click on your profile photo on your Facebook page</p>
-        <p class="text-center"><strong>Step 2:</strong> Click Options and click Download</p>
-        <p class="text-center"><strong>Step 3:</strong> Back on this page, click "choose file" and navigate to where you downloaded your facebook profile</p>
-        <p class="text-center"><strong>Step 4:</strong> Right click on the new photo and click "save as"</p>
-        <p class="text-center"><strong>Step 4:</strong> Upload the new photo as your Facebook profile pic</p>
 
+	<div class="row">
+          <p><span class="step">Step 1:</span> Click on your profile photo on your Facebook page</p>
+          <p><span class="step">Step 2:</span> Click Options and click Download</p>
+          <p><span class="step">Step 3:</span> Back on this page, click "Choose File" and navigate to where you downloaded your facebook profile</p>
+          <p><span class="step">Step 4:</span> Right click on the new photo and click "save as"</p>
+          <p><span class="step">Step 4:</span> Upload the new photo as your Facebook profile pic</p>
+	</div>
 
-        <div class="col-xs-6 col-xs-offset-5">
+        <div class="row">
 
           <form id="form1" runat="server">
             <div class="form-group">
@@ -58,21 +57,25 @@
               <input type="file" id="imgInp">
             </div>
           </form>
+
         </div>
+
+	<div class="row">
+          <div class="col-xs-12">
+            <img id="profile" src="#" alt="Image not loaded" />
+          </div>
+	</div>
+
+	<div class="footer">Made by <a href="https://www.linkedin.com/in/questh">Quest Henkart</a>,
+	  this ultra simple mini app adds French, Lebanese and Syrian flags on facebook profile photo.
+	  Design by Dave Coleman. Make your own improvements to the code on
+	  <a href="https://github.com/qhenkart/AllFlags">GitHub</a>
+	</div>
       </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <img id="profile" src="#" alt="Image not loaded" />
-        </div>
-      </div>
+
     </div>
 
 </div>
-
-
-
-
-<p class="text-center">Made by <a href="https://www.linkedin.com/in/questh">Quest Henkart</a>, this ultra simple mini app adds French, Lebanese and Syrian flags on facebook profile photo. It is open source: <a href="https://github.com/qhenkart/AllFlags"> Check out the Repo here, add improvements or make your own version </a> </p>
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -90,7 +93,6 @@
   ga('send', 'pageview');
 
 </script>
-
 
 
 </body>
