@@ -1,3 +1,16 @@
 body {
   background-color: #eee
 }
+
+.red {
+    color: #c0392b;
+}
+
+.directions {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.items {
+    padding:5px;
+}
